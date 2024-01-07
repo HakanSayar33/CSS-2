@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0px;
+        font-family: "Lato", sans-serif;
+      }
+      #showcase {
+        background-image: url(resim1.jpg);
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+      }
+
+      #how-it-works {
+        padding: 10px;
+        text-align: center;
+      }
+      #how-it-works h2 {
+        color: #3e4555;
+        font-size: 30px;
+      }
+      .main-header {
+        background-color: #fc997c;
+        padding: 8px 16px;
+      }
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 101px);
+        text-align: right;
+      }
+      .main-nav_items {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+      }
+      .main-nav_item {
+        display: inline-block;
+        margin: 8px;
+        text-decoration: none;
+      }
+      .main-header_logo {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 21px;
+      }
+      .main-nav_item a {
+        text-decoration: none;
+        color: #ffff;
+      }
+      .main-nav_item a:hover,
+      .main-nav_item:hover::before {
+        color: blue;
+      }
+      .main-nav_item a:active,
+      .main-nav_item:active::before {
+        color: white;
+      }
+      .main-nav_item::before {
+        content: "\2022";
+        color: white;
+      }
+      .main-nav_item__login a {
+        color: white;
+        background-color: blue;
+        padding: 4px 16px;
+        border-radius: 8px;
+        border: 2px solid white;
+      }
+      .main-nav_item__login::before {
+        content: none;
+      }
+
+      .main-nav_item__login a:hover {
+        color: blue;
+        border: 2px solid blue;
+        background-color: white;
+      }
+
+      .row {
+        margin-bottom: 40px;
+      }
+      .col {
+        display: inline-block;
+        width: 30%;
+        padding: 16px;
+        margin: 8px;
+      }
+      .col h3 {
+        color: #3e4555;
+        font-size: 26px;
+      }
+      .icon-box i {
+        color: #fc997c;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="" class="main-header_logo">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav_items">
+          <li class="main-nav_item"><a href="#">Filmler</a></li>
+          <li class="main-nav_item"><a href="#">Diziler</a></li>
+          <li class="main-nav_item main-nav_item__login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <div class="row">
+          <h2>How it works?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+            perspiciatis!
+          </p>
+        </div>
+        <div class="row">
+          <div class="icon-box col">
+            <i class="fa-solid fa-arrow-right-to-bracket fa-2x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              porro dolore tempora sequi modi ut.
+            </p>
+          </div>
+          <div class="icon-box col">
+            <i class="fa-brands fa-buffer fa-2x"></i>
+            <h3>Choose a Plan</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas a
+              consequatur ipsam ipsa aspernatur mollitia.
+            </p>
+          </div>
+          <div class="icon-box col">
+            <i class="fa-regular fa-face-smile fa-2x"></i>
+            <h3>Enjoy Movies</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde,
+              atque recusandae. Ipsa eum exercitationem autem!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
